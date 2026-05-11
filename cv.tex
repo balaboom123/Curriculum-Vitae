@@ -1,0 +1,151 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=0.62in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{tabularx}
+
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=1.3em,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt}
+\renewcommand{\arraystretch}{1.08}
+\urlstyle{same}
+
+\newcommand{\sectiontitle}[1]{%
+  \vspace{6pt}
+  {\large\textbf{#1}}\par
+  \vspace{2pt}
+  \hrule
+  \vspace{3pt}
+}
+
+\newcommand{\cventry}[3]{%
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{#1} & \textit{#2} \\
+    \multicolumn{2}{@{}X@{}}{#3}
+  \end{tabularx}
+  \par
+}
+
+\newcommand{\cvpubentry}[3]{%
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    {\textbf{\small #1}} & #2 \\
+    #3 & \\
+  \end{tabularx}
+  \par
+}
+
+\begin{document}
+\begin{center}
+  {\LARGE\textbf{Kuan Wei Chen}}\\[3pt]
+  \small
+  No. 36, Ln. 510, Dadun 11th St., Nantun Dist., Taichung City 408021, Taiwan (R.O.C.)\\
+  +886-976518289 \;|\;
+  \href{mailto:elaping5691@gmail.com}{elaping5691@gmail.com} \;|\;
+  \href{https://github.com/balaboom123}{github.com/balaboom123}
+\end{center}
+
+\sectiontitle{Education}
+\cventry
+  {National Central University, Taoyuan, Taiwan}
+  {Starting Sep 2025}
+  {Master in Computer Science, specialization in Artificial Intelligence}
+\vspace{2pt}
+\cventry
+  {National Changhua University of Education, Changhua, Taiwan}
+  {Sep 2021 -- Jun 2025}
+  {Bachelor in Electrical Engineering, GPA 3.8/4.0 \;|\;
+   \href{https://github.com/balaboom123/balaboom123/blob/main/certifications/NCUE_DD_S1052020.pdf}{Grad. Cert.}}
+
+\sectiontitle{Experience}
+\cventry
+  {Project Assistant in AI Application Laboratory}
+  {Jun 2025 -- Dec 2025}
+  {{\href{https://github.com/balaboom123/balaboom123/blob/main/certifications/Project_Assistant_NCUE_AIAL.pdf}{Certificate}}}
+\begin{itemize}
+  \item Assisted in TEEP and IIPP projects, collaborating with 8 international interns.
+  \item Contributed to ``Multi-biometric Authentication Systems'' and ``Action Recognition Systems''.
+\end{itemize}
+
+\sectiontitle{Publications}
+\cvpubentry
+  {STRLite: Lightweight Masked Autoencoders for Adaptable Scene Text Recognition}
+  {\textit{\footnotesize IEEE ICCE}}
+  {\href{https://github.com/balaboom123/STRLite}{GitHub}}
+\begin{itemize}
+  \item Co-first author; proposed a 6M-parameter MAE plus autoregressive STR pipeline for low-cost domain adaptation.
+  \item Achieved 93.82\% weighted accuracy on six standard STR benchmarks and 81.03\% on U14M dataset.
+\end{itemize}
+
+\vspace{1pt}
+\cvpubentry
+  {Towards Compact Sign Language Translation: Frame Rate and Model Size Trade-offs}
+  {\textit{\footnotesize IEEE ICCE}}
+  {}
+\begin{itemize}
+  \item First author; built a 77M-parameter MMPose-to-T5-small gloss-free SLT pipeline.
+  \item Showed that 12 fps cuts complexity by 75\% approximately with only a modest BLEU drop from 10.06 to 9.53.
+\end{itemize}
+
+\vspace{2pt}
+\cvpubentry
+  {\mbox{Two-step Authentication: Multi-biometric System Using Voice and Facial Recognition}}
+  {\textit{\footnotesize IET~ICETA}}
+  {\href{https://arxiv.org/abs/2601.06218}{arXiv} \;|\;
+   \href{https://github.com/NCUE-EE-AIAL/Two-step-Authentication-Multi-biometric-System}{GitHub} \;|\;
+   \href{https://github.com/balaboom123/balaboom123/blob/main/certifications/IET_ICETA_Certificate.pdf}{Certificate}}
+\begin{itemize}
+  \item First author; led a team of 2 international interns.
+  \item Designed a ResNet-based voice verification architecture and utilize VGG16 for facial recognition in TensorFlow.
+\end{itemize}
+
+\sectiontitle{Projects}
+\cventry
+  {SignDATA: Data Pipeline for Sign Language Translation}
+  {Python, Det, Pose, System Design}
+  {\href{https://arxiv.org/abs/2604.20357}{arXiv} \;|\;
+   \href{https://github.com/balaboom123/signdata-slt}{GitHub}}
+\begin{itemize}
+  \item First author; Open-source GitHub repo reached 100+ stars; Built a config-driven preprocessing toolkit that standardizes heterogeneous sign-language datasets into training-ready artifacts.
+  \item designed pose and video recipes covering localization, clipping, cropping, landmark extraction, and export.
+\end{itemize}
+
+\sectiontitle{Skills}
+\begin{tabularx}{\textwidth}{@{}p{0.30\textwidth}X@{}}
+\textbf{Languages} & English (IELTS 6.5), Mandarin (native), Hokkien (native) \\
+\textbf{Programming} & Python, C/C++ \\
+\textbf{Libraries/Frameworks} & PyTorch, TensorFlow, Hugging Face, Scikit-learn, NumPy, Pandas \\
+\textbf{Tools/Platforms} & Git, GitHub \\
+\end{tabularx}
+
+\sectiontitle{Awards and Certifications}
+\cventry
+  {Micro-Program in Green Energy Technology}
+  {Electrical Engineering, NCUE}
+  {}
+\begin{itemize}
+  \item Courses included ``Introductions to Green Energy Technology,'' ``Circuit Theory Experiments,'' ``Circuit Theory,'' and ``Special Topic for Industry.''
+\end{itemize}
+
+\vspace{2pt}
+\cventry
+  {Teaching Assistant -- Linear Algebra}
+  {Electrical Engineering, NCUE}
+  {\href{https://github.com/balaboom123/balaboom123/blob/main/certifications/NCUE_Teaching_Assistant.pdf}{Certificate}}
+\begin{itemize}
+  \item Created and delivered supplementary materials for 40+ students.
+  \item Assisted with exam invigilation.
+\end{itemize}
+
+\vspace{2pt}
+\cventry
+  {Model United Nations Certifications}
+  {2018--2019}
+  {\href{https://github.com/balaboom123/balaboom123/blob/main/certifications/MUN/The\%207th\%20HSNU\%20Model\%20United\%20Nations\%20Conference\%20(2019).jpg}{HSNU MUN VII} \;|\;
+   \href{https://github.com/balaboom123/balaboom123/blob/main/certifications/MUN/TCGSMUN\%20VII\%20Conference\%20(2019).jpg}{TCGSMUN VII} \;|\;
+   \href{https://github.com/balaboom123/balaboom123/blob/main/certifications/MUN/Central\%20Taiwan\%20Model\%20United\%20Nations\%20IX\%20(2018).jpg}{Central Taiwan MUN IX} \;|\;
+   \href{https://github.com/balaboom123/balaboom123/blob/main/certifications/MUN/Central\%20Taiwan\%20Model\%20United\%20Nations\%20XII\%20(2019).jpg}{Central Taiwan MUN XII}}
+
+\end{document}
