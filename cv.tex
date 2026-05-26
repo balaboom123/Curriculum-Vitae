@@ -29,6 +29,13 @@
   \par
 }
 
+\newcommand{\cventryshort}[2]{%
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{#1} & \textit{#2} \\
+  \end{tabularx}
+  \par
+}
+
 \newcommand{\cvpubentry}[3]{%
   \begin{tabularx}{\textwidth}{@{}Xr@{}}
     {\textbf{\small #1}} & #2 \\
@@ -39,12 +46,13 @@
 
 \begin{document}
 \begin{center}
-  {\LARGE\textbf{Kuan Wei Chen}}\\[3pt]
+  {\LARGE\textbf{Kuanwei Chen}}\\[3pt]
   \small
   No. 36, Ln. 510, Dadun 11th St., Nantun Dist., Taichung City 408021, Taiwan (R.O.C.)\\
   +886-976518289 \;|\;
   \href{mailto:elaping5691@gmail.com}{elaping5691@gmail.com} \;|\;
-  \href{https://github.com/balaboom123}{github.com/balaboom123}
+  \href{https://github.com/balaboom123}{github.com/balaboom123} \;|\;
+  \href{https://balaboom123.github.io/}{balaboom123.github.io/}
 \end{center}
 
 \sectiontitle{Education}
@@ -57,48 +65,52 @@
   {National Changhua University of Education, Changhua, Taiwan}
   {Sep 2021 -- Jun 2025}
   {Bachelor in Electrical Engineering, GPA 3.8/4.0 \;|\;
-   \href{https://github.com/balaboom123/balaboom123/blob/main/certifications/NCUE_DD_S1052020.pdf}{Grad. Cert.}}
+   \href{https://github.com/balaboom123/balaboom123/blob/main/certifications/ncue/NCUE_DD_S1052020.pdf}{Grad. Cert.}}
 
 \sectiontitle{Experience}
 \cventry
   {Project Assistant in AI Application Laboratory}
-  {Jun 2025 -- Dec 2025}
-  {{\href{https://github.com/balaboom123/balaboom123/blob/main/certifications/Project_Assistant_NCUE_AIAL.pdf}{Certificate}}}
+  {Jun 2024 -- Dec 2024}
+  {{\href{https://github.com/balaboom123/balaboom123/blob/main/certifications/ncue/Project_Assistant_NCUE_AIAL.pdf}{Certificate}}}
 \begin{itemize}
   \item Assisted in TEEP and IIPP projects, collaborating with 8 international interns.
   \item Contributed to ``Multi-biometric Authentication Systems'' and ``Action Recognition Systems''.
 \end{itemize}
 
-\sectiontitle{Publications}
+\sectiontitle{Research Publication}
 \cvpubentry
   {STRLite: Lightweight Masked Autoencoders for Adaptable Scene Text Recognition}
-  {\textit{\footnotesize IEEE ICCE}}
-  {\href{https://github.com/balaboom123/STRLite}{GitHub}}
+  {\textit{\footnotesize IEEE ICCE-TW}}
+  {\href{https://www.researchgate.net/publication/404900026_STRLite_Lightweight_Masked_Autoencoders_for_Adaptable_Scene_Text_Recognition}{ResearchGate} \;|\;
+   \href{https://github.com/balaboom123/STRLite}{GitHub}}
 \begin{itemize}
-  \item Co-first author; proposed a 6M-parameter MAE plus autoregressive STR pipeline for low-cost domain adaptation.
-  \item Achieved 93.82\% weighted accuracy on six standard STR benchmarks and 81.03\% on U14M dataset.
+  \item Co-first author; designed a 6M-parameter Vision Transformer (ViT) with Masked Autoencoder (MAE) pretraining and fine-tuning with an autoregressive decoder for Scene Text Recognition.
+  \item Achieved 93.82\% weighted accuracy on six standard Computer Vision benchmarks and 81.03\% on U14M.
 \end{itemize}
 
 \vspace{1pt}
 \cvpubentry
   {Towards Compact Sign Language Translation: Frame Rate and Model Size Trade-offs}
-  {\textit{\footnotesize IEEE ICCE}}
-  {}
+  {\textit{\footnotesize IEEE ICCE-TW}}
+  {\href{https://arxiv.org/abs/2605.09554}{arXiv} \;|\;
+   \href{https://www.researchgate.net/publication/404753212_Towards_Compact_Sign_Language_Translation_Frame_Rate_and_Model_Size_Trade-offs?_tp=eyJjb250ZXh0Ijp7InBhZ2UiOiJwcm9maWxlIiwicHJldmlvdXNQYWdlIjoicHVibGljYXRpb24iLCJwb3NpdGlvbiI6InBhZ2VDb250ZW50In19}{ResearchGate}}
 \begin{itemize}
-  \item First author; built a 77M-parameter MMPose-to-T5-small gloss-free SLT pipeline.
-  \item Showed that 12 fps cuts complexity by 75\% approximately with only a modest BLEU drop from 10.06 to 9.53.
+  \item First author; built a 77M-parameter end-to-end Natural Language Processing (NLP) pipeline.
+  \item reduce computation by ${\sim}75\%$ with minimal BLEU impact (10.06$\to$9.53), providing efficiency trade-off insights.
 \end{itemize}
 
 \vspace{2pt}
 \cvpubentry
   {\mbox{Two-step Authentication: Multi-biometric System Using Voice and Facial Recognition}}
   {\textit{\footnotesize IET~ICETA}}
-  {\href{https://arxiv.org/abs/2601.06218}{arXiv} \;|\;
+  {\href{https://digital-library.theiet.org/doi/abs/10.1049/icp.2024.4141}{Publication} \;|\;
+   \href{https://arxiv.org/abs/2601.06218}{arXiv} \;|\;
+   \href{https://www.researchgate.net/publication/387841032_Two-step_authentication_multi-biometric_system_using_voice_and_facial_recognition?_tp=eyJjb250ZXh0Ijp7InBhZ2UiOiJwcm9maWxlIiwicHJldmlvdXNQYWdlIjoicHVibGljYXRpb24iLCJwb3NpdGlvbiI6InBhZ2VDb250ZW50In19}{ResearchGate} \;|\;
    \href{https://github.com/NCUE-EE-AIAL/Two-step-Authentication-Multi-biometric-System}{GitHub} \;|\;
-   \href{https://github.com/balaboom123/balaboom123/blob/main/certifications/IET_ICETA_Certificate.pdf}{Certificate}}
+   \href{https://github.com/balaboom123/balaboom123/blob/main/certifications/conference/IET_ICETA_Certificate.pdf}{Certificate}}
 \begin{itemize}
-  \item First author; led a team of 2 international interns.
-  \item Designed a ResNet-based voice verification architecture and utilize VGG16 for facial recognition in TensorFlow.
+  \item First author; led a team of 2 interns in designing a multi-modal AI/ML system combining Machine Vision and Audio Recognition/Speaker Verification.
+  \item Designed a ResNet-based Convolutional Neural Network (CNN) with Fbank feature extraction and triplet loss for voice verification (99.1\%); fine-tuned VGG16 with MTCNN object detection in TensorFlow (95.1\%).
 \end{itemize}
 
 \sectiontitle{Projects}
@@ -106,46 +118,46 @@
   {SignDATA: Data Pipeline for Sign Language Translation}
   {Python, Det, Pose, System Design}
   {\href{https://arxiv.org/abs/2604.20357}{arXiv} \;|\;
+   \href{https://www.researchgate.net/publication/404102518_SignDATA_Data_Pipeline_for_Sign_Language_Translation?_tp=eyJjb250ZXh0Ijp7InBhZ2UiOiJwcm9maWxlIiwicHJldmlvdXNQYWdlIjoicHVibGljYXRpb24iLCJwb3NpdGlvbiI6InBhZ2VDb250ZW50In19}{ResearchGate} \;|\;
    \href{https://github.com/balaboom123/signdata-slt}{GitHub}}
 \begin{itemize}
-  \item First author; Open-source GitHub repo reached 100+ stars; Built a config-driven preprocessing toolkit that standardizes heterogeneous sign-language datasets into training-ready artifacts.
-  \item designed pose and video recipes covering localization, clipping, cropping, landmark extraction, and export.
+  \item First author; open-source repo with 100+ stars; built a config-driven data preprocessing, and dataset management system for standardizing heterogeneous sign-language corpora for AI/ML Pipeline development.
+  \item Designed processing pipeline integrating YOLO/MMDet detection and MediaPipe/MMPose landmark extraction for structured feature engineering, applying system-design principles for multi-dataset scalability.
 \end{itemize}
 
 \sectiontitle{Skills}
 \begin{tabularx}{\textwidth}{@{}p{0.30\textwidth}X@{}}
-\textbf{Languages} & English (IELTS 6.5), Mandarin (native), Hokkien (native) \\
-\textbf{Programming} & Python, C/C++ \\
-\textbf{Libraries/Frameworks} & PyTorch, TensorFlow, Hugging Face, Scikit-learn, NumPy, Pandas \\
-\textbf{Tools/Platforms} & Git, GitHub \\
+\textbf{Languages} & English (\href{https://github.com/balaboom123/balaboom123/blob/main/certifications/language/IELTS-2024-02-17.jpg}{IELTS 6.5}, \href{https://github.com/balaboom123/balaboom123/blob/main/certifications/language/TOEIC-2023-07-27.jpg}{TOEIC 830}), Mandarin (native), Hokkien (native) \\
+\textbf{Programming} & Python, C/C++, HTML, CSS, JavaScript \\
+\textbf{ML/DL Libraries} & PyTorch, TensorFlow, Hugging Face, Scikit-learn, NumPy, Pandas \\
+\textbf{Frontend \& Tools} & React, Vue, Git, GitHub \\
+\textbf{Research Areas} & Computer Vision, Natural Language Processing (NLP), Deep Learning, Data Cleaning, Data Analysis \\
 \end{tabularx}
 
 \sectiontitle{Awards and Certifications}
-\cventry
+\cventryshort
   {Micro-Program in Green Energy Technology}
   {Electrical Engineering, NCUE}
-  {}
 \begin{itemize}
   \item Courses included ``Introductions to Green Energy Technology,'' ``Circuit Theory Experiments,'' ``Circuit Theory,'' and ``Special Topic for Industry.''
+  \item Gained foundational knowledge in Renewable Energy Systems, Power Electronics, and Circuit Analysis for sustainable engineering applications.
 \end{itemize}
 
 \vspace{2pt}
-\cventry
-  {Teaching Assistant -- Linear Algebra}
+\cventryshort
+  {Teaching Assistant -- Linear Algebra\textnormal{\;\small\href{https://github.com/balaboom123/balaboom123/blob/main/certifications/ncue/NCUE_Teaching_Assistant.pdf}{[Certificate]}}}
   {Electrical Engineering, NCUE}
-  {\href{https://github.com/balaboom123/balaboom123/blob/main/certifications/NCUE_Teaching_Assistant.pdf}{Certificate}}
 \begin{itemize}
-  \item Created and delivered supplementary materials for 40+ students.
-  \item Assisted with exam invigilation.
+  \item Created and delivered supplementary materials for 40+ students and assisted with exam invigilation.
 \end{itemize}
 
 \vspace{2pt}
 \cventry
   {Model United Nations Certifications}
   {2018--2019}
-  {\href{https://github.com/balaboom123/balaboom123/blob/main/certifications/MUN/The\%207th\%20HSNU\%20Model\%20United\%20Nations\%20Conference\%20(2019).jpg}{HSNU MUN VII} \;|\;
-   \href{https://github.com/balaboom123/balaboom123/blob/main/certifications/MUN/TCGSMUN\%20VII\%20Conference\%20(2019).jpg}{TCGSMUN VII} \;|\;
-   \href{https://github.com/balaboom123/balaboom123/blob/main/certifications/MUN/Central\%20Taiwan\%20Model\%20United\%20Nations\%20IX\%20(2018).jpg}{Central Taiwan MUN IX} \;|\;
-   \href{https://github.com/balaboom123/balaboom123/blob/main/certifications/MUN/Central\%20Taiwan\%20Model\%20United\%20Nations\%20XII\%20(2019).jpg}{Central Taiwan MUN XII}}
+  {\href{https://github.com/balaboom123/balaboom123/blob/main/certifications/mun/The\%207th\%20HSNU\%20Model\%20United\%20Nations\%20Conference\%20(2019).jpg}{HSNU MUN VII} \;|\;
+   \href{https://github.com/balaboom123/balaboom123/blob/main/certifications/mun/TCGSMUN\%20VII\%20Conference\%20(2019).jpg}{TCGSMUN VII} \;|\;
+   \href{https://github.com/balaboom123/balaboom123/blob/main/certifications/mun/Central\%20Taiwan\%20Model\%20United\%20Nations\%20IX\%20(2018).jpg}{Central Taiwan MUN IX} \;|\;
+   \href{https://github.com/balaboom123/balaboom123/blob/main/certifications/mun/Central\%20Taiwan\%20Model\%20United\%20Nations\%20XII\%20(2019).jpg}{Central Taiwan MUN XII}}
 
 \end{document}
