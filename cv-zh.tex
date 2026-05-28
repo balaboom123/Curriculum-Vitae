@@ -58,18 +58,20 @@
 \begin{center}
   {\LARGE\textbf{Kuanwei Chen}}\\[3pt]
   \small
-  台灣（中華民國）408021 台中市南屯區大墩十一街 510 巷 36 號\\
-  +886-976518289 \;|\;
   \href{mailto:elaping5691@gmail.com}{elaping5691@gmail.com} \;|\;
   \href{https://github.com/balaboom123}{github.com/balaboom123} \;|\;
+  \href{https://www.linkedin.com/in/kuanwei-chen-55056b3b8}{linkedin.com/in/kuanwei-chen-55056b3b8} \;|\;
   \href{https://balaboom123.github.io/}{balaboom123.github.io/}
 \end{center}
+
+\sectiontitle{摘要}
+國立中央大學資訊工程碩士生，專注於人工智慧，研究成果已發表於三場國際研討會。具備以 PyTorch 與 TensorFlow 建構電腦視覺與多模態深度學習系統的經驗，研究主題涵蓋場景文字辨識、手語翻譯與生物特徵辨識。曾開發開源手語資料處理管線並累積 100+ GitHub stars，目標職缺為 AI/ML 工程師或電腦視覺研究相關職位。
 
 \sectiontitle{學歷}
 \cventry
   {國立中央大學，桃園，台灣}
   {2025 年 9 月起}
-  {資訊工程碩士，專長為人工智慧}
+  {資訊工程碩士，人工智慧組}
 \vspace{2pt}
 \cventry
   {國立彰化師範大學，彰化，台灣}
@@ -83,91 +85,66 @@
   {2024 年 6 月 -- 2024 年 12 月}
   {{\href{https://github.com/balaboom123/balaboom123/blob/main/certifications/ncue/Project_Assistant_NCUE_AIAL.pdf}{證明}}}
 \begin{itemize}
-  \item 協助 TEEP 與 IIPP 計畫，並與 8 位國際實習生共同合作。
-  \item 參與「多生物特徵驗證系統」與「動作辨識系統」相關工作。
+  \item 與 8 位國際實習生合作，於 TEEP 與 IIPP 研究計畫下，以 PyTorch 與 TensorFlow 參與涵蓋生物特徵辨識與動作辨識的多模態 AI 專案，完成展示給指導教授的功能原型，並支援研討會投稿。
+  \item 建立以 Pandas 與 NumPy 為基礎的前處理、資料集與評估管線，提升電腦視覺與語音相關研究中的模型實驗與驗證效率。
 \end{itemize}
 
-\sectiontitle{論文發表}
+\sectiontitle{研究發表}
 \cvpubentry
-  {STRLite：用於可適應場景文字辨識的輕量化遮罩自編碼器}
+  {STRLite：可調適場景文字辨識的輕量化遮罩自編碼器}
   {\textit{\footnotesize IEEE ICCE-TW}}
   {\href{https://www.researchgate.net/publication/404900026_STRLite_Lightweight_Masked_Autoencoders_for_Adaptable_Scene_Text_Recognition}{ResearchGate} \;|\;
    \href{https://github.com/balaboom123/STRLite}{GitHub}}
 \begin{itemize}
-  \item 共同第一作者；設計一套具 600 萬參數的視覺轉換器（ViT），採用遮罩自編碼器（MAE）預訓練與微調，並搭配自回歸解碼器進行場景文字辨識。
-  \item 在六個標準電腦視覺基準資料集上達到 93.82\% 加權準確率，並於 U14M 資料集上達到 81.03\%。
+  \item 共同第一作者；設計 600 萬參數的 Vision Transformer（ViT）模型，結合 Masked Autoencoder（MAE）預訓練與自回歸解碼器微調，用於場景文字辨識。
+  \item 於六個標準電腦視覺基準資料集上達成 93.82\% 加權準確率，並於 U14M 資料集上達成 81.03\%。
 \end{itemize}
 
 \vspace{1pt}
 \cvpubentry
-  {邁向精簡型手語翻譯：幀率與模型規模的權衡}
+  {邁向輕量化手語翻譯：幀率與模型規模之取捨}
   {\textit{\footnotesize IEEE ICCE-TW}}
   {\href{https://arxiv.org/abs/2605.09554}{arXiv} \;|\;
    \href{https://www.researchgate.net/publication/404753212_Towards_Compact_Sign_Language_Translation_Frame_Rate_and_Model_Size_Trade-offs?_tp=eyJjb250ZXh0Ijp7InBhZ2UiOiJwcm9maWxlIiwicHJldmlvdXNQYWdlIjoicHVibGljYXRpb24iLCJwb3NpdGlvbiI6InBhZ2VDb250ZW50In19}{ResearchGate}}
 \begin{itemize}
-  \item 第一作者；建構一套具 7,700 萬參數的端對端自然語言處理（NLP）流程。
-  \item 將運算量降低約 75\%，BLEU 僅由 10.06 小幅下降至 9.53，提供效率與模型規模的取捨洞察。
+  \item 第一作者；建立 7,700 萬參數的端到端自然語言處理（NLP）管線。
+  \item 在 BLEU 分數僅由 10.06 降至 9.53 的情況下，將運算量降低約 ${\sim}75\%$，提供模型效率取捨的實證分析。
 \end{itemize}
 
 \vspace{2pt}
 \cvpubentry
-  {\mbox{雙步驟驗證：結合語音與人臉辨識的多生物特徵系統}}
+  {雙步驟驗證：結合語音與人臉辨識的多生物特徵系統}
   {\textit{\footnotesize IET~ICETA}}
-  {\href{https://digital-library.theiet.org/doi/abs/10.1049/icp.2024.4141}{發表} \;|\;
+  {\href{https://digital-library.theiet.org/doi/abs/10.1049/icp.2024.4141}{Publication} \;|\;
    \href{https://arxiv.org/abs/2601.06218}{arXiv} \;|\;
    \href{https://www.researchgate.net/publication/387841032_Two-step_authentication_multi-biometric_system_using_voice_and_facial_recognition?_tp=eyJjb250ZXh0Ijp7InBhZ2UiOiJwcm9maWxlIiwicHJldmlvdXNQYWdlIjoicHVibGljYXRpb24iLCJwb3NpdGlvbiI6InBhZ2VDb250ZW50In19}{ResearchGate} \;|\;
    \href{https://github.com/NCUE-EE-AIAL/Two-step-Authentication-Multi-biometric-System}{GitHub} \;|\;
-   \href{https://github.com/balaboom123/balaboom123/blob/main/certifications/conference/IET_ICETA_Certificate.pdf}{證書}}
+   \href{https://github.com/balaboom123/balaboom123/blob/main/certifications/conference/IET_ICETA_Certificate.pdf}{證明}}
 \begin{itemize}
-  \item 第一作者；帶領由 2 位實習生組成的團隊，設計結合機器視覺與音訊辨識／說話者驗證的多模態 AI/ML 系統。
-  \item 設計以 ResNet 為基礎的卷積神經網路（CNN），採用 Fbank 特徵擷取與三元組損失進行語音驗證（99.1\%）；於 TensorFlow 中微調 VGG16 並搭配 MTCNN 物件偵測進行人臉辨識（95.1\%）。
+  \item 第一作者；帶領 2 位實習生設計結合機器視覺與音訊辨識／說話者驗證的多模態 AI/ML 系統。
+  \item 設計基於 ResNet 的卷積神經網路（CNN），結合 Fbank 特徵與 triplet loss 進行語音驗證（99.1\%）；並以 TensorFlow 微調結合 MTCNN 物件偵測的人臉辨識 VGG16 模型（95.1\%）。
 \end{itemize}
 
 \sectiontitle{專案}
 \cventry
-  {SignDATA：手語翻譯資料處理流程}
-  {Python、偵測、姿態、系統設計}
+  {SignDATA：手語翻譯資料處理管線}
+  {Python、偵測、姿態估計、系統設計}
   {\href{https://arxiv.org/abs/2604.20357}{arXiv} \;|\;
    \href{https://www.researchgate.net/publication/404102518_SignDATA_Data_Pipeline_for_Sign_Language_Translation?_tp=eyJjb250ZXh0Ijp7InBhZ2UiOiJwcm9maWxlIiwicHJldmlvdXNQYWdlIjoicHVibGljYXRpb24iLCJwb3NpdGlvbiI6InBhZ2VDb250ZW50In19}{ResearchGate} \;|\;
    \href{https://github.com/balaboom123/signdata-slt}{GitHub}}
 \begin{itemize}
-  \item 第一作者；開源 GitHub 儲存庫累積超過 100 顆星；建置以設定檔驅動的資料前處理與資料集管理系統，將異質手語語料庫標準化，以供 AI/ML 開發流程使用。
-  \item 設計整合 YOLO/MMDet 偵測與 MediaPipe/MMPose 關鍵點擷取的處理流程，進行結構化特徵工程，並應用系統設計原則以支援多資料集的擴展性。
+  \item 第一作者；開源專案於 GitHub 累積 100+ stars；建構以設定驅動的資料前處理與資料集管理系統，用於標準化異質手語語料並支援 AI/ML 管線開發。
+  \item 設計整合 YOLO/MMDet 偵測與 MediaPipe/MMPose 關鍵點擷取的處理流程，以進行結構化特徵工程，並以系統設計方式支援多資料集擴充。
 \end{itemize}
 
 \sectiontitle{技能}
 \begin{tabularx}{\textwidth}{@{}p{0.30\textwidth}X@{}}
-\textbf{語言} & 英文（\href{https://github.com/balaboom123/balaboom123/blob/main/certifications/language/IELTS-2024-02-17.jpg}{IELTS 6.5}、\href{https://github.com/balaboom123/balaboom123/blob/main/certifications/language/TOEIC-2023-07-27.jpg}{TOEIC 830}）、華語（母語）、台語（母語） \\
-\textbf{程式設計} & Python、C/C++、HTML、CSS、JavaScript \\
-\textbf{ML/DL 函式庫} & PyTorch、TensorFlow、Hugging Face、Scikit-learn、NumPy、Pandas \\
-\textbf{前端與工具} & React、Vue、Git、GitHub \\
-\textbf{研究領域} & 電腦視覺、自然語言處理（NLP）、深度學習、資料清理、資料分析 \\
+\textbf{語言能力} & 英文（\href{https://github.com/balaboom123/balaboom123/blob/main/certifications/language/IELTS-2024-02-17.jpg}{IELTS 6.5}、\href{https://github.com/balaboom123/balaboom123/blob/main/certifications/language/TOEIC-2023-07-27.jpg}{TOEIC 830}）、中文（母語）、台語（母語） \\
+\textbf{程式與工具} & Python、C/C++、HTML、CSS、JavaScript、Git、GitHub、React、Vue \\
+\textbf{框架與函式庫} & PyTorch、TensorFlow、Scikit-learn、Hugging Face、NumPy、Pandas \\
+\textbf{AI/ML} & 機器學習、深度學習、視覺語言模型、多模態、AI/ML 管線開發、資料前處理、資料集管理、特徵工程、遷移學習、微調、系統設計 \\
+\textbf{電腦視覺與 NLP} & 電腦視覺、自然語言處理（NLP）、生物醫學工程、動作辨識、語音辨識、物件偵測 \\
+\textbf{模型與 CV 技術} & 卷積神經網路、Transformer、YOLO、MMDet、MediaPipe \\
 \end{tabularx}
-
-\sectiontitle{獎項與證照}
-\cventryshort
-  {綠能科技微學程}
-  {電機工程學系，國立彰化師範大學}
-\begin{itemize}
-  \item 修習課程包含「綠能科技導論」、「電路學實驗」、「電路學」與「產業專題」。
-  \item 奠定再生能源系統、電力電子及電路分析在永續工程應用上的基礎知識。
-\end{itemize}
-
-\vspace{2pt}
-\cventryshort
-  {教學助理：線性代數\textnormal{\;\small\href{https://github.com/balaboom123/balaboom123/blob/main/certifications/ncue/NCUE_Teaching_Assistant.pdf}{[證明]}}}
-  {電機工程學系，國立彰化師範大學}
-\begin{itemize}
-  \item 為 40 位以上學生製作並講授補充教材，並協助考試監考。
-\end{itemize}
-
-\vspace{2pt}
-\cventry
-  {模擬聯合國會議證書}
-  {2018 -- 2019}
-  {\href{https://github.com/balaboom123/balaboom123/blob/main/certifications/mun/The\%207th\%20HSNU\%20Model\%20United\%20Nations\%20Conference\%20(2019).jpg}{HSNU MUN VII} \;|\;
-   \href{https://github.com/balaboom123/balaboom123/blob/main/certifications/mun/TCGSMUN\%20VII\%20Conference\%20(2019).jpg}{TCGSMUN VII} \;|\;
-   \href{https://github.com/balaboom123/balaboom123/blob/main/certifications/mun/Central\%20Taiwan\%20Model\%20United\%20Nations\%20IX\%20(2018).jpg}{Central Taiwan MUN IX} \;|\;
-   \href{https://github.com/balaboom123/balaboom123/blob/main/certifications/mun/Central\%20Taiwan\%20Model\%20United\%20Nations\%20XII\%20(2019).jpg}{Central Taiwan MUN XII}}
 
 \end{document}
