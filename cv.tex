@@ -10,15 +10,15 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
 \setlist[itemize]{leftmargin=1.3em,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt}
-\renewcommand{\arraystretch}{1.08}
+\renewcommand{\arraystretch}{1.05}
 \urlstyle{same}
 
 \newcommand{\sectiontitle}[1]{%
-  \vspace{6pt}
+  \vspace{5pt}
   {\large\textbf{#1}}\par
-  \vspace{2pt}
+  \vspace{-1pt}
   \hrule
-  \vspace{3pt}
+  \vspace{2pt}
 }
 
 \newcommand{\cventry}[3]{%
@@ -39,77 +39,76 @@
 \newcommand{\cvpubentry}[3]{%
   \begin{tabularx}{\textwidth}{@{}Xr@{}}
     {\textbf{\small #1}} & #2 \\
-    #3 & \\
+    \multicolumn{2}{@{}X@{}}{#3}
   \end{tabularx}
   \par
 }
 
 \begin{document}
 \begin{center}
-  {\LARGE\textbf{Kuanwei Chen}}\\[3pt]
+  {\LARGE\textbf{Kuanwei Chen}}\\[2pt]
   \small
+  +886-975-518-289 \;|\;
   \href{mailto:elaping5691@gmail.com}{elaping5691@gmail.com} \;|\;
   \href{https://github.com/balaboom123}{github.com/balaboom123} \;|\;
-  \href{https://www.linkedin.com/in/kuanwei-chen-55056b3b8}{linkedin.com/in/kuanwei-chen-55056b3b8} \;|\;
-  \href{https://balaboom123.github.io/}{balaboom123.github.io/}
+  \href{https://www.linkedin.com/in/kwc-tw/}{linkedin.com/in/kwc-tw} \;|\;
+  \href{https://balaboom123.github.io/}{balaboom123.github.io}
 \end{center}
 
 \sectiontitle{Summary}
-M.S.\ Computer Science student at National Central University specializing in Artificial Intelligence, with research presented at three international conferences. Experienced in building computer vision and multimodal deep learning systems for scene text recognition, sign language translation, and biometric recognition using PyTorch and TensorFlow. Built an open-source sign language data pipeline with 100+ GitHub stars, and seeking AI/ML engineering or computer vision research roles.
+M.S.\ Computer Science student at National Central University specializing in Artificial Intelligence, with research presented at three international conferences.
+Experienced in building computer vision and NLP systems for scene text recognition, sign language translation, and biometric recognition using PyTorch and TensorFlow.
+Seeking AI/ML engineering or computer vision research roles.
 
 \sectiontitle{Education}
 \cventry
   {National Central University, Taoyuan, Taiwan}
-  {Starting Sep 2025}
+  {Sep 2025 -- Present}
   {Master in Computer Science, specialization in Artificial Intelligence}
 \vspace{2pt}
 \cventry
   {National Changhua University of Education, Changhua, Taiwan}
   {Sep 2021 -- Jun 2025}
-  {Bachelor in Electrical Engineering, GPA 3.8/4.0 \;|\;
-   \href{https://github.com/balaboom123/balaboom123/blob/main/certifications/ncue/NCUE_DD_S1052020.pdf}{Grad. Cert.}}
+  {Bachelor in Electrical Engineering, GPA 3.8/4.0}
 
 \sectiontitle{Experience}
-\cventry
+\cventryshort
   {Project Assistant in AI Application Laboratory}
   {Jun 2024 -- Dec 2024}
-  {{\href{https://github.com/balaboom123/balaboom123/blob/main/certifications/ncue/Project_Assistant_NCUE_AIAL.pdf}{Certificate}}}
 \begin{itemize}
-  \item Collaborated with 8 international interns on multimodal AI projects spanning biometric recognition and action recognition using PyTorch and TensorFlow frameworks under the TEEP and IIPP research programs, delivering functional prototypes that were showcased to faculty and contributed to a conference submission.
+  \item Collaborated with 8 international interns under the TEEP and IIPP research programs, delivering 3 multimodal AI prototypes in biometric and action recognition using PyTorch and TensorFlow, contributing to a peer-reviewed publication at IET ICETA.
   \item Built Pandas and NumPy-based preprocessing, dataset, and evaluation pipelines that streamlined model experimentation and validation across computer vision and speech-related research tasks.
 \end{itemize}
 
-\sectiontitle{Research Publication}
+\sectiontitle{Publication}
 \cvpubentry
   {STRLite: Lightweight Masked Autoencoders for Adaptable Scene Text Recognition}
-  {\textit{\footnotesize IEEE ICCE-TW}}
-  {\href{https://www.researchgate.net/publication/404900026_STRLite_Lightweight_Masked_Autoencoders_for_Adaptable_Scene_Text_Recognition}{ResearchGate} \;|\;
-   \href{https://github.com/balaboom123/STRLite}{GitHub}}
+  {}
+  {IEEE ICCE-TW \;|\;
+   \href{https://github.com/balaboom123/STRLite}{github.com/balaboom123/STRLite}}
 \begin{itemize}
   \item Co-first author; designed a 6M-parameter Vision Transformer (ViT) with Masked Autoencoder (MAE) pretraining and fine-tuning with an autoregressive decoder for Scene Text Recognition.
   \item Achieved 93.82\% weighted accuracy on six standard Computer Vision benchmarks and 81.03\% on U14M.
 \end{itemize}
 
-\vspace{1pt}
+\vspace{2pt}
 \cvpubentry
   {Towards Compact Sign Language Translation: Frame Rate and Model Size Trade-offs}
-  {\textit{\footnotesize IEEE ICCE-TW}}
-  {\href{https://arxiv.org/abs/2605.09554}{arXiv} \;|\;
-   \href{https://www.researchgate.net/publication/404753212_Towards_Compact_Sign_Language_Translation_Frame_Rate_and_Model_Size_Trade-offs?_tp=eyJjb250ZXh0Ijp7InBhZ2UiOiJwcm9maWxlIiwicHJldmlvdXNQYWdlIjoicHVibGljYXRpb24iLCJwb3NpdGlvbiI6InBhZ2VDb250ZW50In19}{ResearchGate}}
+  {}
+  {IEEE ICCE-TW \;|\;
+   \href{https://arxiv.org/abs/2605.09554}{arXiv:2605.09554}}
 \begin{itemize}
   \item First author; built a 77M-parameter end-to-end Natural Language Processing (NLP) pipeline.
-  \item reduce computation by ${\sim}75\%$ with minimal BLEU impact (10.06$\to$9.53), providing efficiency trade-off insights.
+  \item Reduced computation by {\textasciitilde}75\% with minimal BLEU impact (10.06 to 9.53), providing efficiency trade-off insights.
 \end{itemize}
 
 \vspace{2pt}
 \cvpubentry
   {\mbox{Two-step Authentication: Multi-biometric System Using Voice and Facial Recognition}}
-  {\textit{\footnotesize IET~ICETA}}
-  {\href{https://digital-library.theiet.org/doi/abs/10.1049/icp.2024.4141}{Publication} \;|\;
-   \href{https://arxiv.org/abs/2601.06218}{arXiv} \;|\;
-   \href{https://www.researchgate.net/publication/387841032_Two-step_authentication_multi-biometric_system_using_voice_and_facial_recognition?_tp=eyJjb250ZXh0Ijp7InBhZ2UiOiJwcm9maWxlIiwicHJldmlvdXNQYWdlIjoicHVibGljYXRpb24iLCJwb3NpdGlvbiI6InBhZ2VDb250ZW50In19}{ResearchGate} \;|\;
-   \href{https://github.com/NCUE-EE-AIAL/Two-step-Authentication-Multi-biometric-System}{GitHub} \;|\;
-   \href{https://github.com/balaboom123/balaboom123/blob/main/certifications/conference/IET_ICETA_Certificate.pdf}{Certificate}}
+  {}
+  {IET ICETA \;|\;
+   \href{https://doi.org/10.1049/icp.2024.4141}{doi.org/10.1049/icp.2024.4141} \;|\;
+   \href{https://github.com/NCUE-EE-AIAL/Two-Step-Muti-Biometric-Authentication-System}{github.com/NCUE-EE-AIAL/Two-Step-Muti-Biometric-Authentication-System}}
 \begin{itemize}
   \item First author; led a team of 2 interns in designing a multi-modal AI/ML system combining Machine Vision and Audio Recognition/Speaker Verification.
   \item Designed a ResNet-based Convolutional Neural Network (CNN) with Fbank feature extraction and triplet loss for voice verification (99.1\%); fine-tuned VGG16 with MTCNN object detection in TensorFlow (95.1\%).
@@ -118,23 +117,32 @@ M.S.\ Computer Science student at National Central University specializing in Ar
 \sectiontitle{Projects}
 \cventry
   {SignDATA: Data Pipeline for Sign Language Translation}
-  {Python, Det, Pose, System Design}
-  {\href{https://arxiv.org/abs/2604.20357}{arXiv} \;|\;
-   \href{https://www.researchgate.net/publication/404102518_SignDATA_Data_Pipeline_for_Sign_Language_Translation?_tp=eyJjb250ZXh0Ijp7InBhZ2UiOiJwcm9maWxlIiwicHJldmlvdXNQYWdlIjoicHVibGljYXRpb24iLCJwb3NpdGlvbiI6InBhZ2VDb250ZW50In19}{ResearchGate} \;|\;
-   \href{https://github.com/balaboom123/signdata-slt}{GitHub}}
+  {}
+  {\href{https://arxiv.org/abs/2604.20357}{arXiv:2604.20357} \;|\;
+   \href{https://github.com/balaboom123/signdata-slt}{github.com/balaboom123/signdata-slt}}
 \begin{itemize}
   \item First author; open-source repo with 100+ stars; built a config-driven data preprocessing, and dataset management system for standardizing heterogeneous sign-language corpora for AI/ML Pipeline development.
   \item Designed processing pipeline integrating YOLO/MMDet detection and MediaPipe/MMPose landmark extraction for structured feature engineering, applying system-design principles for multi-dataset scalability.
 \end{itemize}
 
+\vspace{2pt}
+\cventry
+  {SEO Content Intelligence Engine}
+  {}
+  {\href{https://github.com/balaboom123/SEO-Content-Intelligence-Engine}{github.com/balaboom123/SEO-Content-Intelligence-Engine} \;|\;
+  \href{https://seo-content-intelligence-engine.vercel.app/}{seo-content-intelligence-engine.vercel.app}}
+\begin{itemize}
+  \item Built a full-stack Next.js web app in TypeScript that scrapes top-10 Google SERP results, extracts NLP entities via OpenAI, and clusters them to reverse-engineer search intent for SEO competitor analysis.
+  \item Implemented Supabase authentication with SQL Row-Level Security policies, interactive Recharts visualizations, Google Sheets export, and deployed on Vercel with rate limiting and API security hardening.
+\end{itemize}
+
 \sectiontitle{Skills}
 \begin{tabularx}{\textwidth}{@{}p{0.30\textwidth}X@{}}
-\textbf{Spoken Languages} & English (\href{https://github.com/balaboom123/balaboom123/blob/main/certifications/language/IELTS-2024-02-17.jpg}{IELTS 6.5}, \href{https://github.com/balaboom123/balaboom123/blob/main/certifications/language/TOEIC-2023-07-27.jpg}{TOEIC 830}), Mandarin (native), Hokkien (native) \\
-\textbf{Programming \& Tools} & Python, C/C++, HTML, CSS, JavaScript, Git, GitHub, React, Vue \\
-\textbf{Frameworks \& Libraries} & PyTorch, TensorFlow, Scikit-learn, Hugging Face, NumPy, Pandas \\
-\textbf{AI/ML} & Machine Learning, Deep Learning, Vision-language Models, Multimodality, AI/ML Pipeline Development, Data Preprocessing, Dataset Management, Feature Engineering, Transfer Learning, Fine-tuning, System Design \\
-\textbf{Computer Vision \& NLP} & Computer Vision, Natural Language Processing (NLP), Biomedical Engineering, Action Recognition, Speech Recognition, Object Detection \\
-\textbf{Models \& CV Stack} & Convolutional Neural Network, Transformer, YOLO, MMDet, MediaPipe \\
+\textbf{Programming \& Tools} & Python, C/C++, JavaScript, TypeScript, HTML/CSS, SQL, Git, Linux, Docker \\
+\textbf{ML Frameworks \& Stack} & PyTorch, TensorFlow, Scikit-learn, Hugging Face, OpenCV, NumPy, Pandas, YOLO, MMDet, MediaPipe \\
+\textbf{Web Development} & React, Next.js, Vue, Supabase, Vercel \\
 \end{tabularx}
+\vspace{2pt}
+\textbf{Languages:} English (\href{https://github.com/balaboom123/balaboom123/blob/main/certifications/language/IELTS-2024-02-17.jpg}{IELTS 6.5}, \href{https://github.com/balaboom123/balaboom123/blob/main/certifications/language/TOEIC-2023-07-27.jpg}{TOEIC 830}), Mandarin (native), Hokkien (native)
 
 \end{document}
