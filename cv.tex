@@ -1,22 +1,26 @@
 \documentclass[10pt,a4paper]{article}
-\usepackage[margin=0.62in]{geometry}
+\usepackage[margin=0.50in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
 \usepackage{tabularx}
+\usepackage[normalem]{ulem}
 
 \pagenumbering{gobble}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
-\setlist[itemize]{leftmargin=1.3em,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt}
-\renewcommand{\arraystretch}{1.05}
+\setlist[itemize]{leftmargin=1.0em,labelsep=0.25em,itemsep=0pt,topsep=0pt,parsep=0pt,partopsep=0pt,before=\small,label=\raisebox{0.2ex}{\tiny\textbullet}}
+\setlist[enumerate]{leftmargin=1.5em,itemsep=1pt,topsep=0pt,parsep=0pt,partopsep=0pt}
+\renewcommand{\arraystretch}{1.0}
 \urlstyle{same}
+
+\newcommand{\plainlink}[1]{\uline{\nolinkurl{#1}}}
 
 \newcommand{\sectiontitle}[1]{%
   \vspace{5pt}
   {\large\textbf{#1}}\par
-  \vspace{-1pt}
+  \vspace{1.5pt}
   \hrule
   \vspace{2pt}
 }
@@ -31,15 +35,28 @@
 
 \newcommand{\cventryshort}[2]{%
   \begin{tabularx}{\textwidth}{@{}Xr@{}}
-    \textbf{#1} & \textit{#2} \\
+    {\small\textbf{#1}} & {\small{#2}} \\
   \end{tabularx}
   \par
 }
 
-\newcommand{\cvpubentry}[3]{%
+\newcommand{\projectentry}[2]{%
+  \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X@{}}
+    {\small\textbf{#1}} \;|\; {\scriptsize #2}
+  \end{tabularx}
+  \par
+}
+
+\newcommand{\projectentrynolink}[1]{%
+  \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X@{}}
+    {\small\textbf{#1}}
+  \end{tabularx}
+  \par
+}
+
+\newcommand{\educationentry}[2]{%
   \begin{tabularx}{\textwidth}{@{}Xr@{}}
-    {\textbf{\small #1}} & #2 \\
-    \multicolumn{2}{@{}X@{}}{#3}
+    {\small\textbf{#1}} & {\small{#2}} \\
   \end{tabularx}
   \par
 }
@@ -49,10 +66,10 @@
   {\LARGE\textbf{Kuanwei Chen}}\\[2pt]
   \small
   +886-975-518-289 \;|\;
-  \href{mailto:elaping5691@gmail.com}{elaping5691@gmail.com} \;|\;
-  \href{https://github.com/balaboom123}{github.com/balaboom123} \;|\;
-  \href{https://www.linkedin.com/in/kwc-tw/}{linkedin.com/in/kwc-tw} \;|\;
-  \href{https://balaboom123.github.io/}{balaboom123.github.io}
+  \href{mailto:elaping5691@gmail.com}{\uline{elaping5691@gmail.com}} \;|\;
+  \href{https://github.com/balaboom123}{\uline{github.com/balaboom123}} \;|\;
+  \href{https://www.linkedin.com/in/kwc-tw/}{\uline{linkedin.com/in/kwc-tw}} \;|\;
+  \href{https://balaboom123.github.io/}{\uline{balaboom123.github.io}}
 \end{center}
 
 \sectiontitle{Summary}
@@ -61,19 +78,17 @@ Experienced in building computer vision and NLP systems for scene text recogniti
 Seeking AI/ML engineering or computer vision research roles.
 
 \sectiontitle{Education}
-\cventry
-  {National Central University, Taoyuan, Taiwan}
-  {Sep 2025 -- Present}
-  {Master in Computer Science, specialization in Artificial Intelligence}
-\vspace{2pt}
-\cventry
-  {National Changhua University of Education, Changhua, Taiwan}
-  {Sep 2021 -- Jun 2025}
-  {Bachelor in Electrical Engineering, GPA 3.8/4.0}
+\educationentry
+  {National Central University | Master, Computer Science, Artificial Intelligence}
+  {Taiwan  2025 -- Present}
+\vspace{1pt}
+\educationentry
+  {National Changhua University of Education | Bachelor, Electrical Engineering, (GPA 3.8/4.0)}
+  {Taiwan  2021 -- 2025}
 
 \sectiontitle{Experience}
 \cventryshort
-  {Project Assistant in AI Application Laboratory}
+  {National Changhua University of Education, AI Application Lab | \textit{Project Assistant}}
   {Jun 2024 -- Dec 2024}
 \begin{itemize}
   \item Collaborated with 8 international interns under the TEEP and IIPP research programs, delivering 3 multimodal AI prototypes in biometric and action recognition using PyTorch and TensorFlow, contributing to a peer-reviewed publication at IET ICETA.
@@ -81,68 +96,60 @@ Seeking AI/ML engineering or computer vision research roles.
 \end{itemize}
 
 \sectiontitle{Publication}
-\cvpubentry
+\begin{enumerate}[label={\arabic*.}]
+  \item \textbf{K. Chen}, K. Zheng, and M. Tsai, ``STRLite: Lightweight Masked Autoencoders for Adaptable Scene Text Recognition,'' IEEE ICCE-TW (accepted), 2026.
+  \item \textbf{K. Chen} and T. Lin, ``SignDATA: Data Pipeline for Sign Language Translation,'' arXiv:2604.20357, 2026.
+  \item \textbf{K. Chen} and M. Tsai, ``Towards Compact Sign Language Translation: Frame Rate and Model Size Trade-offs,'' IEEE ICCE-TW (accepted), 2026.
+  \item \textbf{K. W. Chen}, T. Y. Lin, W. R. Yang, A. Kesarwani, and R. Singh, ``Two-step Authentication: Multi-biometric System Using Voice and Facial Recognition,'' IET Conf. Proc., 2024, doi: 10.1049/icp.2024.4141.
+\end{enumerate}
+
+\sectiontitle{Projects}
+\projectentry
   {STRLite: Lightweight Masked Autoencoders for Adaptable Scene Text Recognition}
-  {}
-  {IEEE ICCE-TW \;|\;
-   \href{https://github.com/balaboom123/STRLite}{github.com/balaboom123/STRLite}}
+  {\plainlink{github.com/balaboom123/STRLite}}
 \begin{itemize}
   \item Co-first author; designed a 6M-parameter Vision Transformer (ViT) with Masked Autoencoder (MAE) pretraining and fine-tuning with an autoregressive decoder for Scene Text Recognition.
   \item Achieved 93.82\% weighted accuracy on six standard Computer Vision benchmarks and 81.03\% on U14M.
 \end{itemize}
-
-\vspace{2pt}
-\cvpubentry
-  {Towards Compact Sign Language Translation: Frame Rate and Model Size Trade-offs}
-  {}
-  {IEEE ICCE-TW \;|\;
-   \href{https://arxiv.org/abs/2605.09554}{arXiv:2605.09554}}
-\begin{itemize}
-  \item First author; built a 77M-parameter end-to-end Natural Language Processing (NLP) pipeline.
-  \item Reduced computation by {\textasciitilde}75\% with minimal BLEU impact (10.06 to 9.53), providing efficiency trade-off insights.
-\end{itemize}
-
-\vspace{2pt}
-\cvpubentry
-  {\mbox{Two-step Authentication: Multi-biometric System Using Voice and Facial Recognition}}
-  {}
-  {IET ICETA \;|\;
-   \href{https://doi.org/10.1049/icp.2024.4141}{doi.org/10.1049/icp.2024.4141} \;|\;
-   \href{https://github.com/NCUE-EE-AIAL/Two-Step-Muti-Biometric-Authentication-System}{github.com/NCUE-EE-AIAL/Two-Step-Muti-Biometric-Authentication-System}}
-\begin{itemize}
-  \item First author; led a team of 2 interns in designing a multi-modal AI/ML system combining Machine Vision and Audio Recognition/Speaker Verification.
-  \item Designed a ResNet-based Convolutional Neural Network (CNN) with Fbank feature extraction and triplet loss for voice verification (99.1\%); fine-tuned VGG16 with MTCNN object detection in TensorFlow (95.1\%).
-\end{itemize}
-
-\sectiontitle{Projects}
-\cventry
+\vspace{3pt}
+\projectentry
   {SignDATA: Data Pipeline for Sign Language Translation}
-  {}
-  {\href{https://arxiv.org/abs/2604.20357}{arXiv:2604.20357} \;|\;
-   \href{https://github.com/balaboom123/signdata-slt}{github.com/balaboom123/signdata-slt}}
+  {\plainlink{github.com/balaboom123/signdata-slt}}
 \begin{itemize}
   \item First author; open-source repo with 100+ stars; built a config-driven data preprocessing, and dataset management system for standardizing heterogeneous sign-language corpora for AI/ML Pipeline development.
   \item Designed processing pipeline integrating YOLO/MMDet detection and MediaPipe/MMPose landmark extraction for structured feature engineering, applying system-design principles for multi-dataset scalability.
 \end{itemize}
-
-\vspace{2pt}
-\cventry
+\vspace{3pt}
+\projectentrynolink
+  {Towards Compact Sign Language Translation: Frame Rate and Model Size Trade-offs}
+\begin{itemize}
+  \item First author; built a 77M-parameter end-to-end Natural Language Processing (NLP) pipeline.
+  \item Reduced computation by {\textasciitilde}75\% with minimal BLEU impact (10.06 to 9.53), providing efficiency trade-off insights.
+\end{itemize}
+\vspace{3pt}
+\projectentry
+  {Two-step Authentication: Multi-biometric System Using Voice and Facial Recognition}
+  {\plainlink{github.com/NCUE-EE-AIAL/Two-Step-Muti-Biometric-Authentication-System}}
+\begin{itemize}
+  \item First author; led a team of 2 interns in designing a multi-modal AI/ML system combining Machine Vision and Audio Recognition/Speaker Verification.
+  \item Designed a ResNet-based Convolutional Neural Network (CNN) with Fbank feature extraction and triplet loss for voice verification (99.1\%); fine-tuned VGG16 with MTCNN object detection in TensorFlow (95.1\%).
+\end{itemize}
+\vspace{3pt}
+\projectentry
   {SEO Content Intelligence Engine}
-  {}
-  {\href{https://github.com/balaboom123/SEO-Content-Intelligence-Engine}{github.com/balaboom123/SEO-Content-Intelligence-Engine} \;|\;
-  \href{https://seo-content-intelligence-engine.vercel.app/}{seo-content-intelligence-engine.vercel.app}}
+  {\plainlink{github.com/balaboom123/SEO-Content-Intelligence-Engine}}
 \begin{itemize}
   \item Built a full-stack Next.js web app in TypeScript that scrapes top-10 Google SERP results, extracts NLP entities via OpenAI, and clusters them to reverse-engineer search intent for SEO competitor analysis.
   \item Implemented Supabase authentication with SQL Row-Level Security policies, interactive Recharts visualizations, Google Sheets export, and deployed on Vercel with rate limiting and API security hardening.
 \end{itemize}
 
 \sectiontitle{Skills}
-\begin{tabularx}{\textwidth}{@{}p{0.30\textwidth}X@{}}
-\textbf{Programming \& Tools} & Python, C/C++, JavaScript, TypeScript, HTML/CSS, SQL, Git, Linux, Docker \\
-\textbf{ML Frameworks \& Stack} & PyTorch, TensorFlow, Scikit-learn, Hugging Face, OpenCV, NumPy, Pandas, YOLO, MMDet, MediaPipe \\
-\textbf{Web Development} & React, Next.js, Vue, Supabase, Vercel \\
-\end{tabularx}
-\vspace{2pt}
-\textbf{Languages:} English (\href{https://github.com/balaboom123/balaboom123/blob/main/certifications/language/IELTS-2024-02-17.jpg}{IELTS 6.5}, \href{https://github.com/balaboom123/balaboom123/blob/main/certifications/language/TOEIC-2023-07-27.jpg}{TOEIC 830}), Mandarin (native), Hokkien (native)
+\footnotesize
+\begin{itemize}
+  \item \textbf{Programming \& Tools:} Python, C/C++, JavaScript, TypeScript, HTML/CSS, SQL, Git, Linux, Docker
+  \item \textbf{ML Frameworks \& Stack:} PyTorch, TensorFlow, Scikit-learn, Hugging Face, OpenCV, NumPy, Pandas, YOLO, MMDet, MediaPipe
+  \item \textbf{Web Development:} React, Next.js, Vue, Supabase, Vercel
+  \item \textbf{Languages:} English (\href{https://github.com/balaboom123/balaboom123/blob/main/certifications/language/IELTS-2024-02-17.jpg}{\uline{IELTS 6.5}}, \href{https://github.com/balaboom123/balaboom123/blob/main/certifications/language/TOEIC-2023-07-27.jpg}{\uline{TOEIC 830}}), Mandarin (native), Hokkien (native)
+\end{itemize}
 
 \end{document}
